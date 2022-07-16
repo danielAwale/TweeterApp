@@ -1,13 +1,12 @@
 header {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  height: 630px;
+  height: 400px;
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: #008ae6;
-  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  background-color: #bd0600;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
   color: aqua;
-
-
 }

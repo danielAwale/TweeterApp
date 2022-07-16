@@ -1,9 +1,9 @@
 .nav-bar-1 {
   display: flex;
   justify-content: space-between;
-  background-color: #3350af;
+  background-color: #2348c2;
   color: #FFFFFF;
-  height: 120px;
+  height: 100px;
   width: 100%;
   padding: 1.5em;
   position: fixed;
