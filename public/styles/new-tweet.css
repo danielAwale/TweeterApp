@@ -1,5 +1,65 @@
+*:focus {
+  outline: 0 !important;
+}
+
 .new-tweet {
+  font-weight: bold;
+  padding-top: 20px ;
+} 
+
+.tweet-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-} 
+  border-bottom: solid;
+}
+
+.textarea {
+  background-color: #f4f1ec;
+  border: none;
+}
+
+.tweet-btn {
+  background-color: rgb(49, 49, 216);
+  font-family: Bungee;
+  color: white;
+}
+
+.btn-div {
+  padding: 10px;
+}
+
+.makingtweets {
+  background-color:#f4f1ec ;
+  color: #545149;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  padding: 10px;
+}
+
+.tweet-username {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.thetweet {
+  border-bottom: solid;
+  padding-bottom: 40px;
+}
+
+.footer-tweet {
+  display: flex;
+  font-size: 80%;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+i:hover{
+  box-shadow: 10px 5px 5px rgb(162, 49, 184)ed;
+  color: rgb(162, 49, 184);
+  cursor: pointer;
+}
