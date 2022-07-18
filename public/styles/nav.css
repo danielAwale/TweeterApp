@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-i {
+#nav-id {
   color: red;
   padding-left: 3em ;
 }

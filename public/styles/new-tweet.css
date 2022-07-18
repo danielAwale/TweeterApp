@@ -56,7 +56,10 @@
   font-weight: bold;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 10px;
 }
+
+
 
 i:hover{
   box-shadow: 10px 5px 5px rgb(162, 49, 184)ed;
