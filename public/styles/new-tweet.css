@@ -1,23 +1,27 @@
+/* takes the blue border off when clicked */
 *:focus {
   outline: 0 !important;
 }
 
+/* class for this section */
 .new-tweet {
   font-weight: bold;
   padding-top: 20px ;
 } 
-
+/* class for the section what are you humming about and text are */
 .tweet-text {
   display: flex;
   flex-direction: column;
   border-bottom: solid;
 }
 
+/* class for the specific textarea, to remove border */
 .textarea {
   background-color: #f4f1ec;
   border: none;
 }
 
+/* class for this s */
 .tweet-btn {
   background-color: rgb(49, 49, 216);
   font-family: Bungee;
@@ -28,6 +32,7 @@
   padding: 10px;
 }
 
+/* class for the section where we see the posted tweets */
 .makingtweets {
   background-color:#f4f1ec ;
   color: #545149;
@@ -38,17 +43,20 @@
   padding: 10px;
 }
 
+/* class for the image, name and @ */
 .tweet-username {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
 }
 
+/* class for the actual tweet */
 .thetweet {
   border-bottom: solid;
   padding-bottom: 40px;
 }
 
+/* class for the foot of the <article>*/
 .footer-tweet {
   display: flex;
   font-size: 80%;
@@ -59,8 +67,7 @@
   padding-top: 10px;
 }
 
-
-
+/* adding hover effects! */
 i:hover{
   box-shadow: 10px 5px 5px rgb(162, 49, 184)ed;
   color: rgb(162, 49, 184);

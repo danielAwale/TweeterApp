@@ -1,3 +1,4 @@
+/* class for the nav */
 .nav-bar-1 {
   display: flex;
   justify-content: space-between;
@@ -10,11 +11,13 @@
   top:0;
 }
 
+/* class for this section */
 .newtweet-nav {
   display: flex;
   flex-direction: column;
 }
 
+/* class for <i> */
 #nav-id {
   color: red;
   padding-left: 3em ;
