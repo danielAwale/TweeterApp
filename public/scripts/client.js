@@ -4,19 +4,25 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function (tweet) {
   return `
     <article>
     <header class="makingtweets">
       <div class="tweet-username">
-        <img src=${tweet.user.avatars}>
-        <span>${tweet.user.name}</span>
-        <span>${tweet.user.handle}</span>
+        <img src=${escape(tweet.user.avatars)}>
+        <span>${escape(tweet.user.name)}</span>
+        <span>${escape(tweet.user.handle)}</span>
       </div>
-      <p class="thetweet"><b>${tweet.content.text}</b></p>
+      <p class="thetweet"><b>${escape(tweet.content.text)}</b></p>
     </header>
     <footer class="footer-tweet">
-      <span>${tweet.created_at}</span>
+      <span>${escape(tweet.created_at)}</span>
       <div>
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
