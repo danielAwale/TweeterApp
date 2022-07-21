@@ -36,7 +36,6 @@ const loadTweets = function () {
   $.ajax('/tweets', {
     type: 'GET',
   }).then(function (tweet) {
-    console.log(tweet);
     renderTweets(tweet);
   })
 };
@@ -44,9 +43,14 @@ const loadTweets = function () {
 const submitTweets = function () {
   $("#thisform").on('submit', function (event) {
     event.preventDefault();
+    if ($('#tweet-text').val().length > 140) {
+      return alert('BE IMAGINATIVE AND CONDENSE YOUR THOUGHTS TO 140 CHARACTERS!')
+    } else if (!$('#tweet-text').val()) {
+      return alert('WRITE SOMETHING! YOU HAVE 140 CHARACTERS!')
+    }
     $.ajax('/tweets', {
       type: "POST",
-      data: $(this).serialize()
+      data: $(this).serialize(),
     }).then(function (res) {
       $('#tweets-container').empty();
       loadTweets();
