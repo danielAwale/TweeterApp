@@ -65,6 +65,7 @@ const submitTweets = function () {
 
     }).then(function (res) {
       loadTweets();
+      $('#tweet-text').val('');
     })
   });
 }
