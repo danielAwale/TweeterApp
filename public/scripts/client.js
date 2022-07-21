@@ -36,6 +36,7 @@ const loadTweets = function () {
   $.ajax('/tweets', {
     type: 'GET',
   }).then(function (tweet) {
+    $('#tweets-container').empty();
     renderTweets(tweet);
   })
 };
@@ -51,8 +52,8 @@ const submitTweets = function () {
     $.ajax('/tweets', {
       type: "POST",
       data: $(this).serialize(),
+
     }).then(function (res) {
-      $('#tweets-container').empty();
       loadTweets();
     })
   });
