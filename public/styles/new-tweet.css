@@ -28,12 +28,18 @@
   color: white;
 }
 
+/* styling for the btn-div containing button, and output */
 .btn-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
   font-family: Bungee;
+}
+
+
+.tweet-btn:hover {
+  cursor: pointer;
 }
 
 /* class for the section where we see the posted tweets */
@@ -77,11 +83,12 @@ i:hover{
   color: rgb(162, 49, 184);
   cursor: pointer;
 }
-
+/* to change the color of .container */
 .color-change {
   color: red;
 }
 
+/* Error messages styling */
 .error-char, .error-none{
   border: 1px solid;
   margin: 10px 0px;

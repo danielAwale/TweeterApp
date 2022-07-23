@@ -4,12 +4,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// Preventing XSS with Escaping
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+//Creating dynamic html
 const createTweetElement = function (tweet) {
   return `
     <article>
@@ -32,12 +34,14 @@ const createTweetElement = function (tweet) {
   </article>`
 };
 
+// Rendering Tweets from the object
 const renderTweets = function (tweets) {
   for (let tweet of tweets) {
     $('#tweets-container').prepend(createTweetElement(tweet));
-  }
+  };
 };
 
+// Loading Tweets through jQuery Ajax
 const loadTweets = function () {
   $('.error-char').text('Be imaginative and condense your thoughts to 140 characters!').hide();
   $('.error-none').text(`Don't be afraid to share your thoughts! Just keep it at 140 charater!`).hide();
@@ -46,9 +50,10 @@ const loadTweets = function () {
   }).then(function (tweet) {
     $('#tweets-container').empty();
     renderTweets(tweet);
-  })
+  });
 };
 
+//Submitting Tweets through jQuery Ajax
 const submitTweets = function () {
   $("#thisform").on('submit', function (event) {
     $('.error-char').text('Be imaginative and condense your thoughts to 140 characters!').hide();
@@ -66,9 +71,9 @@ const submitTweets = function () {
     }).then(function (res) {
       loadTweets();
       $('#tweet-text').val('');
-    })
+    });
   });
-}
+};
 
 $(document).ready(() => {
   loadTweets();
