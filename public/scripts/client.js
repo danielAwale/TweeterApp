@@ -39,8 +39,8 @@ const renderTweets = function (tweets) {
 };
 
 const loadTweets = function () {
-  $('.error-char').text('BE IMAGINATIVE AND CONDENSE YOUR THOUGHTS TO 140 CHARACTERS!').hide();
-  $('.error-none').text('WRITE SOMETHING! YOU HAVE 140 CHARACTERS!').hide();
+  $('.error-char').text('Be imaginative and condense your thoughts to 140 characters!').hide();
+  $('.error-none').text(`Don't be afraid to share your thoughts! Just keep it at 140 charater!`).hide();
   $.ajax('/tweets', {
     type: 'GET',
   }).then(function (tweet) {
@@ -51,13 +51,13 @@ const loadTweets = function () {
 
 const submitTweets = function () {
   $("#thisform").on('submit', function (event) {
-    $('.error-char').text('BE IMAGINATIVE AND CONDENSE YOUR THOUGHTS TO 140 CHARACTERS!').hide();
-    $('.error-none').text('WRITE SOMETHING! YOU HAVE 140 CHARACTERS!').hide();
+    $('.error-char').text('Be imaginative and condense your thoughts to 140 characters!').hide();
+    $('.error-none').text(`Don't be afraid to share your thoughts! Just keep it at 140 charater!`).hide();
     event.preventDefault();
     if ($('#tweet-text').val().length > 140) {
-      return $('.error-char').text('BE IMAGINATIVE AND CONDENSE YOUR THOUGHTS TO 140 CHARACTERS!').slideDown('slow');
+      return $('.error-char').text('Be imaginative and condense your thoughts to 140 characters!').slideDown('slow');
     } else if (!$('#tweet-text').val()) {
-      return $('.error-none').text('WRITE SOMETHING! YOU HAVE 140 CHARACTERS!').slideDown('slow');
+      return $('.error-none').text(`Don't be afraid to share your thoughts! Just keep it at 140 charater!`).slideDown('slow');
     }
     $.ajax('/tweets', {
       type: "POST",
