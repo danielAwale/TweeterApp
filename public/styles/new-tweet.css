@@ -29,7 +29,11 @@
 }
 
 .btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 10px;
+  font-family: Bungee;
 }
 
 /* class for the section where we see the posted tweets */
@@ -72,6 +76,10 @@ i:hover{
   box-shadow: 10px 5px 5px rgb(162, 49, 184)ed;
   color: rgb(162, 49, 184);
   cursor: pointer;
+}
+
+.color-change {
+  color: red;
 }
 
 .error-char, .error-none{
