@@ -4,6 +4,6 @@ $(document).ready(function () {
     let characterLength = $(this).val().length
     let presentValue = counterValue - characterLength
     $('.counter').text(presentValue).toggleClass('warning', presentValue < 0)
-   
+
   })
 })

@@ -6,7 +6,35 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: #8d5bb1;
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  background-color: #ff006e;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
   color: aqua;
+}
+
+@media (min-width: 1024px) {
+
+
+  .main-header {
+        width: 30%;
+        margin-top: 140px; 
+        background-image: none;   
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffbe0b;
+  }
+
+  .container {
+    width: 55%;
+    margin-top: 120px;
+    background-color: #ffbe0b;
+  }
+
+  .nav-bar-1 {
+    background-color: #8338ec;
+    background-image: none;
+  }
 }

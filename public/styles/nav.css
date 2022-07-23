@@ -1,8 +1,9 @@
-/* class for the nav */
+/*class for the nav */
 .nav-bar-1 {
   display: flex;
   justify-content: space-between;
-  background-color: #2249c8;
+  background-color: #ff006e;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
   color: #FFFFFF;
   height: 100px;
   width: 100%;
@@ -10,6 +11,12 @@
   position: fixed;
   top:0;
 }
+.shockimg {
+  position: absolute;
+  top: 0%;
+  right: 87%;
+}
+
 
 /* class for this section */
 .newtweet-nav {
@@ -18,8 +25,20 @@
 }
 
 /* class for <i> */
-#nav-id {
+ #nav-id {
   color: red;
   padding-left: 3em ;
+  animation: arrowmove 2s infinite;
 }
 
+@keyframes arrowmove {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}  
