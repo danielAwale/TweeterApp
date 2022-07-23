@@ -22,7 +22,7 @@ const createTweetElement = function (tweet) {
       <p class="thetweet"><b>${escape(tweet.content.text)}</b></p>
     </header>
     <footer class="footer-tweet">
-      <span>${escape(tweet.created_at)}</span>
+      <span>${escape(timeago.format((tweet.created_at)))}</span>
       <div>
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
