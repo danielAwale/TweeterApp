@@ -9,18 +9,16 @@ Tweeter is a single-page Twitter clone!
 
 HTML, CSS, Javascript, jQuery, Ajax have helped bring this application to life along with the server side code provided by Lighthouse Labs.
 
-Below are some images of the projects:
+## Screenshots
 
-- If you are on a desktop, this is what Tweeter will look like:
-  https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20page%20on%20a%20desktop.png?raw=true
+!["If you are on a desktop, this is what Tweeter will look like"] (https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20page%20on%20a%20desktop.png?raw=true)
 
-- On your phone, Tweeter will look something like this:
-  https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20phone%20size.png?raw=true
+!["On your phone, Tweeter will look something like this"]
+(https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20phone%20size.png?raw=true)
 
-- Here are some error messages that will show up if you don't follow the 140 characters rule or tweet without writing anything:
-  https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20error%20message%20over%20140.png?raw=true
-
-  https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20Error%20no%20tweet.png?raw=true
+!["Here are some error messages that will show up if you don't follow the 140 characters rule or tweet without writing anything"]
+(https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20error%20message%20over%20140.png?raw=true)
+(https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20Error%20no%20tweet.png?raw=true)
 
 This project was also made possible by Flaticon! ('hello.png: Flaticon.com'. This cover has been designed using resources from Flaticon.com), and helpful sites such as coolers, and stackOverflow.
 
