@@ -62,6 +62,7 @@
 
 /* class for the actual tweet */
 .thetweet {
+  overflow-wrap: break-word;
   border-bottom: solid;
   padding-bottom: 40px;
 }
@@ -75,6 +76,11 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
+}
+
+.makingtweets:hover {
+  opacity: 1;
+  box-shadow: 9px 8px #3250af;
 }
 
 /* adding hover effects! */

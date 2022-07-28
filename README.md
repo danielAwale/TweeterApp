@@ -11,11 +11,11 @@ HTML, CSS, Javascript, jQuery, Ajax have helped bring this application to life a
 
 ## Screenshots
 
-- If you are on a desktop, this is what Tweeter will look like
-  (https://github.com/danielAwale/tweeterapp/blob/master/docs/rsz_tweeter_page_on_a_desktop.png?raw=true)
+- ["If you are on a desktop, this is what Tweeter will look like"](github-image-link)
+  ["desktop view"](https://github.com/danielAwale/tweeterapp/blob/master/docs/rsz_tweeter_page_on_a_desktop.png?raw=true)
 
-- On your phone, Tweeter will look something like this
-  https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20phone%20size.png?raw=true
+- ["On your phone, Tweeter will look something like this"]
+  ["phone view"] (https://github.com/danielAwale/tweeterapp/blob/master/docs/Tweeter%20phone%20size.png?raw=true)
 
 - Here are some error messages that will show up if you don't follow the rules
   (https://github.com/danielAwale/tweeterapp/blob/master/docs/rsz_tweeter_phone_size.png?raw=true)
